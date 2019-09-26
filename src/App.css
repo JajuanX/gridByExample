@@ -5,10 +5,14 @@
 }
 .container {
   height: 100vh;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .box {
+  display: grid;
+  place-items: center;
   width: 100%;
   font-size: 3rem;
 }

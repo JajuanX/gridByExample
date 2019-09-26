@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import GridExample from './pages/Grids'
+import GridByExample from './pages/GridByExample'
 
 function App() {
   return (
     <div className="App">
-      <GridExample />
+      <GridByExample />
     </div>
   );
 }
