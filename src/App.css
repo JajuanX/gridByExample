@@ -6,42 +6,49 @@
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
 .box {
   display: grid;
   place-items: center;
-  height: 200px;
   width: 100%;
   font-size: 3rem;
 }
 
 .box.I {
   background-color: aqua;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .box.Heart {
-
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .box.W {
   background-color: aqua;
-
+  grid-column: 3;
+  grid-row: 1;
 }
 
 .box.Y {
-
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .box.N {
   background-color: aqua;
-
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .box.C {
-
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .box.O {
@@ -50,7 +57,8 @@
 }
 
 .box.D {
-
+  grid-column: 2;
+  grid-row: 3;
 }
 
 .box.E {
