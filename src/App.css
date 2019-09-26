@@ -18,12 +18,6 @@
   font-size: 3rem;
 }
 
-.box.I {
-  background-color: aqua;
-  grid-column: 1;
-  grid-row: 1;
-}
-
 .box.Heart {
   grid-column: 2;
   grid-row: 1;
@@ -63,5 +57,82 @@
 
 .box.E {
   background-color: aqua;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "I"
+    "Love"
+    "W"
+    "Y"
+    "N"
+    "C"
+    "O"
+    "D"
+    "E";
+  }
+  .box {
+    display: grid;
+    place-items: center;
+    height: 250px;
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .box.I {
+    background-color: aqua;
+    grid-area: I;
+  }
+
+  .box.Heart {
+    grid-area: Love;
+
+  }
+
+  .box.W {
+    background-color: aqua;
+    grid-area: W;
+
+  }
+
+  .box.Y {
+    grid-area: Y;
+
+  }
+
+  .box.N {
+    background-color: aqua;
+    grid-area: N;
+
+  }
+
+  .box.C {
+    grid-area: C;
+
+  }
+
+  .box.O {
+    background-color: aqua;
+    grid-area: O;
+
+  }
+
+  .box.D {
+    grid-area: D;
+
+  }
+
+  .box.E {
+    background-color: aqua;
+    grid-area: E;
+
+  }
+
 
 }
